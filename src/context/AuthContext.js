@@ -11,7 +11,7 @@ export function AuthProvider({ children }) {
 
     const [currentUser, setCurrentUser] = useState();
 
-    function singup(email, password) {
+    function signup(email, password) {
         return auth.createUserWithEmailAndPassword(email, password)
     }
 
@@ -27,9 +27,8 @@ export function AuthProvider({ children }) {
 
     const value = {
         currentUser,
-        singup
+        signup
     }
-    
     return (
         <AuthContext.Provider value={value}>
             {children}
