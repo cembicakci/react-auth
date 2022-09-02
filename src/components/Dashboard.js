@@ -15,9 +15,9 @@ function Dashboard() {
 
         try {
             console.log("clicked")
-            navigate('/')
+            navigate('/login')
             await logout()
-            
+
         } catch {
             setError('Failed to log out')
         }
@@ -29,7 +29,7 @@ function Dashboard() {
                 <Card.Body>
                     <h2 className='text-center mb-4'>Profile</h2>
                     {error && <Alert variant='danger'>{error}</Alert>}
-                    <strong>Email:</strong> {currentUser.email}
+                    {currentUser && (<strong>Email</strong>)} {currentUser && currentUser.email}
                     <Link to='/' className='btn btn-primary w-100 mt-3'>Update Profile</Link>
                 </Card.Body>
             </Card>
