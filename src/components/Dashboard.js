@@ -14,8 +14,10 @@ function Dashboard() {
         setError('');
 
         try {
-            await logout()
+            console.log("clicked")
             navigate('/')
+            await logout()
+            
         } catch {
             setError('Failed to log out')
         }
@@ -28,7 +30,7 @@ function Dashboard() {
                     <h2 className='text-center mb-4'>Profile</h2>
                     {error && <Alert variant='danger'>{error}</Alert>}
                     <strong>Email:</strong> {currentUser.email}
-                    <Link to='/update-profile' className='btn btn-primary w-100 mt-3'>Update Profile</Link>
+                    <Link to='/' className='btn btn-primary w-100 mt-3'>Update Profile</Link>
                 </Card.Body>
             </Card>
 
