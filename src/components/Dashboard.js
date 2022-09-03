@@ -30,7 +30,7 @@ function Dashboard() {
                     <h2 className='text-center mb-4'>Profile</h2>
                     {error && <Alert variant='danger'>{error}</Alert>}
                     {currentUser && (<strong>Email</strong>)} {currentUser && currentUser.email}
-                    <Link to='/' className='btn btn-primary w-100 mt-3'>Update Profile</Link>
+                    <Link to='/update-profile' className='btn btn-primary w-100 mt-3'>Update Profile</Link>
                 </Card.Body>
             </Card>
 
