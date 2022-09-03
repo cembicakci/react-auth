@@ -4,13 +4,13 @@
 ![ss2](./img/2.png)
 ![ss3](./img/3.png)
 
-## Tools
+## Tools
 * React
 * Context Api
 * Firebase
 * React Bootstrap
 
-## Features
+## Features
 * You can sign-in/sign-up
 * Update email
 * Update password
